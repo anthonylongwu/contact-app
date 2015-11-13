@@ -1,0 +1,25 @@
+<%= form_tag '/result', method: :post do %>
+<div>
+  <%= label_tag :first_name, "enter first name" %>
+  <%= text_field_tag :first_name %>
+</div>
+
+<div>
+  <%= label_tag :last_name, "enter last name" %>
+  <%= text_field_tag :last_name %>
+</div>
+
+<div>
+  <%= label_tag :email, "enter email" %>
+  <%= text_field_tag :email %>
+</div>
+<div>
+  <%= label_tag :phone_number, "enter phone number" %>
+  <%= text_field_tag :phone_number %>
+</div>
+
+<div>
+  <%= submit_tag "submit here" %>
+</div>
+
+<% end %>

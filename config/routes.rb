@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get '/contacts', to: 'contacts#index'
+  get '/submit', to: 'contacts#submit'
+  post '/submit', to: 'contacts#submit'
+  post '/result', to: 'contacts#result'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
