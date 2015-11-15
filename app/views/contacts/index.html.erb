@@ -1,4 +1,5 @@
 <%@all_contacts.each do |contact|%>
+    <h2><%= link_to contact.full_name, "/contacts/#{contact.id}"> </h2>
   <p>First Name: <%=contact.first_name%></p>
   <p>Last Name: <%=contact.last_name%></p>
   <p>email: <%=contact.email%></p>

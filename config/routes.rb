@@ -2,7 +2,12 @@ Rails.application.routes.draw do
   get '/contacts', to: 'contacts#index'
   get '/submit', to: 'contacts#submit'
   post '/submit', to: 'contacts#submit'
+  get '/result', to: 'contacts#result'
+  get '/contacts/:id', to: 'contacts#edit'
   post '/result', to: 'contacts#result'
+  patch '/contacts/:id', to: 'contacts#update'
+  delete '/contacts/:id', to: 'contacts#destroy'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
