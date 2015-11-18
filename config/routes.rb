@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  get '/contacts', to: 'contacts#index'
-  get '/submit', to: 'contacts#submit'
-  post '/submit', to: 'contacts#submit'
-  get '/result', to: 'contacts#result'
-  get '/contacts/:id', to: 'contacts#edit'
-  post '/result', to: 'contacts#result'
+  get '/', to: 'contacts#index'
+  get '/contacts/new', to: 'contacts#new'
+  post '/contacts/create', to: 'contacts#create'
+  get '/contacts/:id', to: 'contacts#show'
+  get '/contacts/:id/edit', to: 'contacts#edit'
   patch '/contacts/:id', to: 'contacts#update'
   delete '/contacts/:id', to: 'contacts#destroy'
 
